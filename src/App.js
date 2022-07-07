@@ -38,18 +38,19 @@ function App() {
 
   // infinity scroll
   useEffect(() => {
+    function handleScroll() {
+      if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight){
+        return;
+      }else{
+        setpage(page+1);
+      }
+      
+    }
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [page]);
 
-  function handleScroll() {
-    if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight){
-      return;
-    }else{
-      setpage(page+1);
-    }
-    
-  }
+  
 
   return (
     <div className="App">
