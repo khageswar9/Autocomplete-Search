@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background: gainsboro;
+}
+.SearchDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  opacity: 0.6;
+}
+.SearchDiv > input{
+  border: none;
+  width: 60%;
+  height: 30px;
+  margin-left: 5px;
+}
+.SearchDiv > input:focus{
+  outline: none;
+}
+.searchHeader{
+  width: 40%;
+  margin: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.usercard{
+  width: 40%;
+  margin:10px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  font-weight: 600;
+}
+.usercard > div{
+  display: flex;
+  width: 40%;
+  padding-left: 20px;
+  align-items: center;
+}
+.logged-in {
+  color: rgb(21, 167, 21);
+  margin-right: 5px;
+}
+.logged-out {
+  color: rgb(121, 118, 118);
+  margin-right: 5px;
+}
+.name{
+  margin-left: 20px;
+}
+.deatailsDiv{
+  position:fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index:1001;
+  filter: alpha(opacity=80);
+}
+.detailscontent{
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+.cross{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 2em;
+  cursor: pointer;
+}
+.first{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  padding:15px 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1.2px solid rgb(177, 174, 174);
+}
+.first > div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.second{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
