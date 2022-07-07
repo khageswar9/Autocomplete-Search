@@ -4,7 +4,7 @@ import { Searchcontext } from '../context/Searchcontext';
 import { useContext } from 'react';
 
 function Usercard(obj) {
-  const {details , setdetails} = useContext(Searchcontext)
+  const {setdetails} = useContext(Searchcontext)
   return (
     <div className='usercard' key={obj.obj.id} >
         <div onClick={()=>{setdetails(obj)}}>
